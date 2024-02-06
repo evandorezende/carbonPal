@@ -47,7 +47,7 @@ export default function CarbonView({ setResults, myResults }: IProps) {
           capture companies.
         </p>
 
-        {myResults.offset.map((offset: any, index: number) => (
+        {myResults?.offset?.map((offset: any, index: number) => (
           <div
             key={index}
             className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2 mt-4"

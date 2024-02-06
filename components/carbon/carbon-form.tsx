@@ -40,16 +40,6 @@ export default function CarbonForm({ setResults }: any) {
     formState: { errors },
   } = methods;
 
-  async function clientAction(input: any) {
-    try {
-      const results = await axios.post(`/api/carbon`, input);
-
-      setResults(results);
-    } catch (error) {
-      alert(`Something went wrong, please contact support.`);
-    }
-  }
-
   const onSubmit = async (data: CarbonFormValues) => {
     const input = {
       origin: data.origin,
@@ -58,7 +48,14 @@ export default function CarbonForm({ setResults }: any) {
       weight: data.weight,
     };
 
-    clientAction(input);
+    const results = await axios.post(`/api/carbon`, input);
+
+    if (results?.status !== 200) {
+      alert("Error on submit");
+      return;
+    } else {
+      setResults(results?.data);
+    }
   };
 
   return (

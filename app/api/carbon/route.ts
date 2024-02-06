@@ -39,6 +39,8 @@ export async function POST(
             return new NextResponse("No Equipment", { status: 500 })
         }
 
+        console.log(equipment);
+
         const { emission_factor, fuel_consumption, max_weight } = equipment[0] ?? {};
 
         if (!origin || !destination) {

@@ -36,7 +36,7 @@ export default function Home() {
           Greenhouse Gas Protocol, which is the most widely used international
           accounting tool for government and business leaders to understand,
           quantify, and manage greenhouse gas emissions. The resullts are
-          presented "as it is" and should not be used as a final decision making
+          presented &apos;as it is&apos; and should not be used as a final decision making
           tool.
         </p>
       </div>
