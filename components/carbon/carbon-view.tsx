@@ -17,7 +17,7 @@ export default function CarbonView({ setResults, myResults }: IProps) {
       </p>
       <div className="grid grid-cols-2 gap-2 pb-4">
         <div className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2">
-          <p className="text-gray-600 text-sm">Equipament Used:</p>
+          <p className="text-gray-600 text-sm">Equipment Used:</p>
           <p className="text-black">{myResults.equipment}</p>
         </div>
         <div className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2">
@@ -28,13 +28,13 @@ export default function CarbonView({ setResults, myResults }: IProps) {
         </div>
         <div className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2">
           <p className="text-gray-600 text-sm">
-            Total Volume transported (m2):
+            Total Volume transported (m3):
           </p>
           <p className="text-black">{myResults.volume}</p>
         </div>
         <div className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2">
           <p className="text-gray-600 text-sm">Necessary Trips:</p>
-          <p className="text-black">4</p>
+          <p className="text-black">{myResults.trips}</p>
         </div>
         <div className="border border-gray-300 p-2 rounded-md flex flex-col space-y-2">
           <p className="text-gray-600 text-sm">Distance (km):</p>

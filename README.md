@@ -1,8 +1,8 @@
 # CarbonPal
 
-#### Video Demo: <URL HERE>
+## Video Demo: https://youtu.be/D6ixIjbuOwg
 
-#### Description
+## Description
 
 This Next.js application simplifies carbon footprint calculations for road-based goods delivery and present to the user options to offset the emissions. Ideal for professionals and businesses, it offers a simple interface with a form on the homepage, powered by the react-hook-form library and input validation using Yup. Integrated with a MySQL database using NextJs api endpoints only, which means we don't have a dedicated service backend here. We utilized the Google Distance Matrix API to determine the distance between the specified origin and destination points. 
 
@@ -41,17 +41,20 @@ In the "db" folder, we've centralized database operations like creation, droppin
 Within the "app" folder, the homepage resides in "(site)", featuring components rendered based on state values. The "carbon-form.tsx" component within the "components" directory manages the state, including the "myResults" value. Using axios, this component sends requests to the "/api/carbon" endpoint, which exclusively handles PUT requests.
 
 The application has a single endpoint responsible for calculating the carbon footprint. Upon successful calculation, the "carbon-view.tsx" component renders the results. Users have the option to reset the state, returning to the main form.
-
+.
 ├── README.md
+├── actions
 ├── app
 │   ├── (site)
 │   │   └── page.tsx
 │   ├── api
 │   │   └── carbon
 │   │       └── route.ts
+│   ├── error.tsx
 │   ├── favicon.ico
 │   ├── globals.css
-│   └── layout.tsx
+│   ├── layout.tsx
+│   └── not-found.tsx
 ├── components
 │   └── carbon
 │       ├── carbon-form.tsx

@@ -29,7 +29,7 @@ export default function Home() {
 
       <div>
         <p className="text-center p-4 left-0 top-0 flex w-full justify-center text-black text-sm dark:text-white border-b border-gray-300 pb-6 pt-8 dark:border-neutral-800 dark:bg-zinc-800/30 lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          This app calcullates the carbon footprint of a delivery based on the
+          This app calculates the carbon footprint of a delivery based on the
           weight, volume, distance and equipment used. It also provides an
           estimated cost to offset this emission with carbon capture companies.
           The method used to calculate the carbon footprint is based on the
